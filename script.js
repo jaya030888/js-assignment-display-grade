@@ -3,7 +3,7 @@ let age=prompt("Enter Your Age:");
 let marks=prompt("Enter Your Marks:");
 let totalMarks=prompt("Enter Total Marks:");
 
-if(age<=0 || age>=120){
+if(!(age>=0 && age<=120){
     age= "Invalid Age"
 }
 
@@ -45,4 +45,5 @@ else{
 
 let studentData=(`Name: ${name}<br>Age: ${age}<br>Grade: ${grade}<br>${message}`);
 document.getElementById("result").innerHTML = studentData 
+
 
